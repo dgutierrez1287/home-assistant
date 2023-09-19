@@ -8,6 +8,7 @@ secrets.yaml
 *.sqlite
 .storage/
 .cloud
+pymyq/
 OZW_Log.txt
 harmony_harmony_hub.conf
 known_devices.yaml

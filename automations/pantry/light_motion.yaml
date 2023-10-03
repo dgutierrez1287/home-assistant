@@ -1,0 +1,22 @@
+id: 'pantry_light_on_motion'
+alias: 'Pantry light on Motion'
+mode: restart
+trigger:
+  platform: state
+  entity_id: binary_sensor.pantry_motion_sensor_motion
+  to: detected
+condition: []
+action:
+  - service: switch.turned_on
+    data: {}
+    target:
+      entity_id: switch.pantry
+  - delay:
+      hours: 0
+      minutes: 10
+      seconds: 0
+      milliseconds: 0
+  - service: switch.turned_off
+    data: {}
+    target:
+      entity_id: switch.pantry

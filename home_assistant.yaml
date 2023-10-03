@@ -1,0 +1,6 @@
+name: Home
+temperature_unit: F  
+time_zone: America/New_York
+unit_system: imperial
+country: US
+language: en-US

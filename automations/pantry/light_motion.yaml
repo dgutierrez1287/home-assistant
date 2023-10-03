@@ -4,10 +4,11 @@ mode: restart
 trigger:
   platform: state
   entity_id: binary_sensor.pantry_motion_sensor_motion
-  to: detected
+  from: 'off'
+  to: 'on'
 condition: []
 action:
-  - service: switch.turned_on
+  - service: switch.turn_on
     data: {}
     target:
       entity_id: switch.pantry
@@ -16,7 +17,7 @@ action:
       minutes: 10
       seconds: 0
       milliseconds: 0
-  - service: switch.turned_off
+  - service: switch.turn_off
     data: {}
     target:
       entity_id: switch.pantry

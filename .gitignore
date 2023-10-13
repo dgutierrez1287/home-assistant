@@ -10,6 +10,8 @@ secrets.yaml
 .vscode
 .cloud
 pymyq/
+custom_components/hacs
+custom_components/hacs.*
 OZW_Log.txt
 harmony_harmony_hub.conf
 known_devices.yaml

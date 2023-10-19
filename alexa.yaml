@@ -16,7 +16,7 @@ filter:
     ## sensors
   exclude_entities:
     ## switch leds
-    - "switch.*_led"      
+    - "switch*led"      
 entity_config:
   light.master_lights:
     name: Master Bedroom Lights

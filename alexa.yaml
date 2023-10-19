@@ -2,21 +2,21 @@ filter:
   include_entities:
     ## lights
     ## switches
-    light.master_lights
-    light.dining_room
-    light.kitchen_cabinets
-    light.kitchen_pendant
-    light.kitchen_light
-    switch.playroom
-    switch.small_bathroom_overhead_light
-    switch.kids_shower_light
-    switch.kids_shower_fan
-    switch.pantry_light
+    - light.master_lights
+    - light.dining_room
+    - light.kitchen_cabinets
+    - light.kitchen_pendant
+    - light.kitchen_light
+    - switch.playroom
+    - switch.small_bathroom_overhead_light
+    - switch.kids_shower_light
+    - switch.kids_shower_fan
+    - switch.pantry_light
     ## scripts
     ## sensors
   exclude_entities:
     ## switch leds
-    switch.*_led      
+    - switch.*_led      
 entity_config:
   light.master_lights:
     name: Master Bedroom Lights

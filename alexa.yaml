@@ -1,0 +1,60 @@
+filter:
+  include_entities:
+    ## lights
+    ## switches
+    light.master_lights
+    light.dining_room
+    light.kitchen_cabinets
+    light.kitchen_pendant
+    light.kitchen_light
+    switch.playroom
+    switch.small_bathroom_overhead_light
+    switch.kids_shower_light
+    switch.kids_shower_fan
+    switch.pantry_light
+    ## scripts
+    ## sensors
+  exclude_entities:
+    ## switch leds
+    switch.*_led      
+entity_config:
+  light.master_lights:
+    name: Master Bedroom Lights
+    description: The overhead lights in master_bedroom
+    display_categories: LIGHT
+  light.dining_room:
+    name: Dining Room Lights
+    description: The chandler in the dining room
+    display_categories: LIGHT
+  light.kitchen_cabinets:
+    name: Kitchen Cabinet Lights
+    description: The kitchen cabinet under lights
+    display_categories: LIGHT
+  light.kitchen_light:
+    name: Kitchen Lights
+    description: The kitchen overhead lights
+    display_categories: LIGHT
+  light.kitchen_pendant:
+    name: Kitchen Island Lights
+    description: The pendant lights over the island
+    display_categories: LIGHT
+  switch.playroom:
+    name: Playroom Lights
+    description: The playroom lights
+    display_categories: LIGHT
+  switch.small_bathroom_overhead_light:
+    name: Powder Room Lights
+    description: The overheadd lights in the small bathroom
+    display_categories: LIGHT
+  switch_kids_shower_light:
+    name: Kids Shower Room Lights
+    description: The lights in the kids shower room
+    display_categories: LIGHT
+  switch_kids_shower_fan:
+    name: Kids Shower Fan
+    description: The kids shower fan
+    display_categories: FAN
+  switch_pantry_light:
+    name: Pantry Light
+    description: The lights in the pantry
+    display_categories: LIGHT

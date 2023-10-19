@@ -11,7 +11,7 @@ action:
   - service: switch.turn_on
     data: {}
     target:
-      entity_id: switch.pantry
+      entity_id: switch.pantry_light
   - delay:
       hours: 0
       minutes: 10
@@ -20,4 +20,4 @@ action:
   - service: switch.turn_off
     data: {}
     target:
-      entity_id: switch.pantry
+      entity_id: switch.pantry_light

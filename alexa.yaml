@@ -55,15 +55,15 @@ entity_config:
     name: Powder Room Lights
     description: The overheadd lights in the small bathroom
     display_categories: LIGHT
-  switch_kids_shower_light:
+  switch.kids_shower_light:
     name: Kids Shower Room Lights
     description: The lights in the kids shower room
     display_categories: LIGHT
-  switch_kids_shower_fan:
+  switch.kids_shower_fan:
     name: Kids Shower Fan
     description: The kids shower fan
     display_categories: FAN
-  switch_pantry_light:
+  switch.pantry_light:
     name: Pantry Light
     description: The lights in the pantry
     display_categories: LIGHT

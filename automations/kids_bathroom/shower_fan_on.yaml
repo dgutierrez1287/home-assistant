@@ -2,9 +2,9 @@ id: 'kids_bathroom_fan_on_humiditity'
 alias: 'Kids Batroom Fan On Humidity'
 mode: single
 trigger:
-  platform: state
+  platform: numeric_state
   entity_id: sensor.kids_bathroom_humidity
-  to: 90.0
+  above: 90.0
 condition: []
 action:
   - service: switch.turn_on

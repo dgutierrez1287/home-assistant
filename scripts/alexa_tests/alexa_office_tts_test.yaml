@@ -1,0 +1,8 @@
+alexa_office_tts_test:
+  sequence:
+    - alias: "alexa office tts test"
+      service: notify.alexa_media
+      data:
+        message: This is a test, this is only a test
+        target:
+          - media_player.office

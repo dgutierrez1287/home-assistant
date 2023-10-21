@@ -6,5 +6,3 @@ alexa_kitchen_tts_test:
         message: This is a test, this is only a test
         target:
           - media_player.kitchen_new_dot
-        data:
-          type: announce

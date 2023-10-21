@@ -1,10 +1,9 @@
-script:
-  alexa_kitchen_tts_test:
-    sequence:
-      - alias: "alexa kitchen tts test"
-        service: notify.media_player.kitchen_new_dot
+alexa_kitchen_tts_test:
+  sequence:
+    - alias: "alexa kitchen tts test"
+      service: notify.media_player.kitchen_new_dot
+      data:
+        message: This is a test, this is only a test
         data:
-          message: This is a test, this is only a test
-          data:
-            type: announce
-            method: all
+          type: announce
+          method: all

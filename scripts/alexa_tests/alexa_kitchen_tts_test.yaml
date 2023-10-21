@@ -1,7 +1,7 @@
 alexa_kitchen_tts_test:
   sequence:
     - alias: "alexa kitchen tts test"
-      service: notify.media_player.kitchen_new_dot
+      service: notify.kitchen_new_dot
       data:
         message: This is a test, this is only a test
         data:

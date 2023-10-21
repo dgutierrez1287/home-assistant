@@ -13,6 +13,14 @@ filter:
     - switch.kids_shower_fan
     - switch.pantry_light
     ## scripts
+
+    # alexa tests
+    - script.alexa_kitchen_tts_test
+    - script.alexa_laundery_tts_test
+    - script.alexa_master_bath_tts_test
+    - script.alexa_master_bedroom_tts_test
+    - script.alexa_office_tts_test
+
     ## sensors
   exclude_entities:
     ## switch leds

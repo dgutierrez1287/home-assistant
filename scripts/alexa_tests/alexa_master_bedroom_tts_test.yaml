@@ -5,4 +5,4 @@ alexa_master_bedroom_tts_test:
       data:
         message: go fuck yourself
         target:
-          - media_player.master_bedroom
+          - media_player.bedroom_echo_show

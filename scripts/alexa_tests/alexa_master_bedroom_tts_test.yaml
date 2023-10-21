@@ -1,0 +1,8 @@
+alexa_master_bedroom_tts_test:
+  sequence:
+    - alias: "alexa master bedroom tts test"
+      service: notify.alexa_media
+      data:
+        message: go fuck yourself
+        target:
+          - media_player.master_bedroom

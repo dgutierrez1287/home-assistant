@@ -1,0 +1,14 @@
+alexa_test_all_tts:
+  sequence:
+  - alias: "tell the first alexa to be tested"
+    service: notify.alexa_media_last_called
+    data:
+      message: The first alexa to be tested is kitchen
+      data:
+        type: tts
+  - alias: delay for 2 seconds
+    delay:
+      hours: 0
+      minutes: 0
+      seconds: 2
+      milliseconds: 0

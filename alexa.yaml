@@ -21,6 +21,12 @@ filter:
     - script.alexa_master_bedroom_tts_test
     - script.alexa_office_tts_test
 
+    ## Kitchen scripts
+    - script.night_mode_kitchen
+
+    ## whole house scripts
+    - script.good_night_whole_house
+
     ## sensors
   exclude_entities:
     ## switch leds

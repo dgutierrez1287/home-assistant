@@ -1,0 +1,41 @@
+good_night_whole_house:
+  sequence:
+    - alias: "turn off kitchen lights"
+      service: light.turn_off
+      data: {}
+      target:
+        entity_id:
+        - light.kitchen_cabinets
+        - light.kitchen_pendant
+        - light.kitchen_light
+    - alias: "turn off dining room"
+      service: light.turn_off
+      data: {}
+      target:
+        entity_id: light.dining_room
+    - alias: "turn off playroom"
+      service: switch.turn_off
+      data: {}
+      target:
+        entity_id: switch.playroom
+    - alias: "turn off pantry"
+      service: switch.turn_off
+      data: {}
+      target:
+        entity_id: switch.pantry_light   
+    - alias: "turn off small bathroom light"
+      service: switch.turn_off
+      data: {}
+      target:
+        entity_id: switch.small_bathroom_overhead_light
+    - alias: "turn off master bedroom"
+      service: light.turn_off
+      data: {}
+      target:
+        eneity_id: light.master_lights
+    - alias: "say goodnight"
+      service: notify_alexa_media
+      data:
+        message: The house is closed down, good night
+        target:
+          - media_player.bedroom_echo_show

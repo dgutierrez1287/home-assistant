@@ -32,7 +32,7 @@ good_night_whole_house:
       service: light.turn_off
       data: {}
       target:
-        eneity_id: light.master_lights
+        entity_id: light.master_lights
     - alias: "say goodnight"
       service: notify_alexa_media
       data:

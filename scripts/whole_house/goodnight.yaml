@@ -34,7 +34,7 @@ good_night_whole_house:
       target:
         entity_id: light.master_lights
     - alias: "say goodnight"
-      service: notify_alexa_media
+      service: notify.alexa_media
       data:
         message: The house is closed down, good night
         target:
